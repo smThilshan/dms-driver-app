@@ -1,4 +1,7 @@
-import 'package:dms_driver_app/presentation/dashboard/dashboard_screen.dart';
+import 'package:dms_driver_app/presentation/dashboard/screens/dashboard_screen.dart';
+import 'package:dms_driver_app/presentation/hours/hours_screen.dart';
+import 'package:dms_driver_app/presentation/my_orders/screens/my_orders_screen.dart';
+import 'package:dms_driver_app/presentation/profile/screens/profile_screen.dart';
 import 'package:flutter/material.dart';
 
 class MainLayout extends StatefulWidget {
@@ -57,29 +60,4 @@ class _MainLayoutState extends State<MainLayout> {
       ),
     );
   }
-}
-
-// Example placeholders for your screens:
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-  @override
-  Widget build(BuildContext context) => const Center(child: Text('Home'));
-}
-
-class MyOrdersScreen extends StatelessWidget {
-  const MyOrdersScreen({super.key});
-  @override
-  Widget build(BuildContext context) => const Center(child: Text('My Orders'));
-}
-
-class HoursScreen extends StatelessWidget {
-  const HoursScreen({super.key});
-  @override
-  Widget build(BuildContext context) => const Center(child: Text('Hours'));
-}
-
-class ProfileScreen extends StatelessWidget {
-  const ProfileScreen({super.key});
-  @override
-  Widget build(BuildContext context) => const Center(child: Text('Profile'));
 }

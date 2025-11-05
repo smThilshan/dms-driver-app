@@ -1,8 +1,21 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<!-- For driver tracking -->
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+
     <application
+        
         android:label="dms_driver_app"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+
+<!-- For driver tracking -->
+        <service android:name="com.baseflow.geolocator.GeolocatorLocationService" android:foregroundServiceType="location" />
+
+
         <activity
             android:name=".MainActivity"
             android:exported="true"

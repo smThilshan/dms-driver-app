@@ -1,7 +1,7 @@
-import 'package:dms_driver_app/presentation/dashboard/dashboard_screen.dart';
-import 'package:dms_driver_app/presentation/login/login_screen.dart';
+import 'package:dms_driver_app/presentation/dashboard/screens/dashboard_screen.dart';
+import 'package:dms_driver_app/presentation/login/screens/login_screen.dart';
 import 'package:dms_driver_app/presentation/splash/splash_screen.dart';
-import 'package:dms_driver_app/presentation/test_screen.dart';
+import 'package:dms_driver_app/presentation/common/widgets/bottom_navigation_bar.dart';
 import 'package:go_router/go_router.dart' show GoRouter, GoRoute;
 
 final GoRouter router = GoRouter(

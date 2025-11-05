@@ -1,6 +1,6 @@
-import 'package:dms_driver_app/presentation/widgets/dashboard_card.dart';
-import 'package:dms_driver_app/presentation/widgets/greeting_text.dart';
-import 'package:dms_driver_app/presentation/widgets/status_indicator.dart';
+import 'package:dms_driver_app/presentation/dashboard/widget/dashboard_card.dart';
+import 'package:dms_driver_app/presentation/common/widgets/greeting_text.dart';
+import 'package:dms_driver_app/presentation/dashboard/widget/status_indicator.dart';
 import 'package:flutter/material.dart';
 
 class DashboardScreen extends StatefulWidget {
@@ -27,7 +27,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               // Greeting
-              GreetingText(name: "John"),
+              GreetingText(name: "Thilshan"),
               SizedBox(height: 50),
               // Status Indicator
               Center(
@@ -52,7 +52,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 ),
               ),
 
-              const SizedBox(height: 50),
+              SizedBox(height: size.height * 0.04),
 
               // Cards
               Expanded(
