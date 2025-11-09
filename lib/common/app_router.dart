@@ -1,4 +1,5 @@
 import 'package:dms_driver_app/presentation/dashboard/screens/dashboard_screen.dart';
+import 'package:dms_driver_app/presentation/driver_home_page.dart';
 import 'package:dms_driver_app/presentation/login/screens/login_screen.dart';
 import 'package:dms_driver_app/presentation/splash/splash_screen.dart';
 import 'package:dms_driver_app/presentation/common/widgets/bottom_navigation_bar.dart';
@@ -11,5 +12,6 @@ final GoRouter router = GoRouter(
     // GoRoute(path: '/', builder: (context, state) => const SplashScreen()),
     // GoRoute(path: '/', builder: (context, state) => const LoginScreen()),
     GoRoute(path: '/', builder: (context, state) => const MainLayout()),
+    // GoRoute(path: '/', builder: (context, state) => const DriverHomePage()),
   ],
 );
